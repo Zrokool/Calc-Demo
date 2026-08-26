@@ -1,523 +1,454 @@
-# Getting Started: Calc-Demo
+# Create Your First GitHub Repository
 
-A complete guide for absolute beginners to download the repository and push your first changes to GitHub.
-
----
-
-## Windows Instructions
-
-### What you'll need:
-- A Windows laptop
-- An internet connection
-- A GitHub account (free at github.com)
+A beginner-friendly guide using VSCode to create your first repository.
 
 ---
 
-### Step 1: Open PowerShell (Windows Terminal)
+## FIRST: Create a GitHub Account
 
-**What is PowerShell?** It's a program where you type commands to tell your computer what to do.
+You need a GitHub account before you can upload your code. This is free and takes 5 minutes.
 
-1. Click the **Windows Start button** (bottom left corner, the Windows logo)
-2. In the search box that appears, type: `PowerShell`
-3. You'll see "Windows PowerShell" appear in the results
-4. Click on it
-5. A dark blue window will open with white text — this is PowerShell
+### Step 1: Go to GitHub
 
----
-
-### Step 2: Navigate to your Documents folder
-
-In PowerShell, type this command and press Enter:
-```powershell
-cd Documents
-```
-
-**What does this do?** It moves you to your Documents folder. You should see the text change to show you're in Documents.
-
----
-
-### Step 3: Create a new folder called Demo
-
-Type this command and press Enter:
-```powershell
-mkdir Demo
-```
-
-**What does this do?** It creates a new folder named "Demo" in your Documents folder.
-
-Now type this command and press Enter:
-```powershell
-cd Demo
-```
-
-**What does this do?** It moves you INTO the Demo folder.
-
----
-
-### Step 4: Download and Install Git
-
-**What is Git?** It's software that helps you save and manage your code changes.
-
-#### 4a. Download Git
-
-1. Open your web browser (Chrome, Edge, or Firefox)
-2. In the address bar at the top, type: `git-scm.com/download/win`
+1. Open your browser (Chrome, Safari, Firefox, or Edge)
+2. In the address bar, type: `github.com`
 3. Press Enter
-4. A download will start automatically
-5. Wait for it to finish (it will download to your Downloads folder)
 
-#### 4b. Find and run the Git installer
+### Step 2: Click "Sign up"
 
-1. Click the **Windows Start button** (bottom left)
-2. In the search box, type: `Downloads`
-3. Click "Downloads" to open your Downloads folder
-4. Look for a file that looks like: `Git-2.x.x-64-bit.exe` (the numbers might be different)
-5. **Right-click** on it (press the right button on your mouse, not the left)
-6. Click **"Run as administrator"**
-7. A popup might appear asking "Do you want to allow this app?" — Click **"Yes"**
+You'll see the GitHub homepage. Click the green **Sign up** button (top right corner).
 
-#### 4c. Install Git (follow the wizard)
+### Step 3: Enter your email
 
-1. A new window will open with the Git installer
-2. You'll see many screens with options
-3. For every screen, just click the **"Next >"** button
-4. **Important screen:** When you see a screen that says "Adjusting your PATH environment", make sure the option **"Git from the command line and also from 3rd-party software"** is selected (it should be by default, with a circle next to it)
-5. Keep clicking **"Next >"** until you see an **"Install"** button
-6. Click **"Install"**
-7. Wait for the installation to finish (about 1-2 minutes)
-8. When you see **"Completing the Git Setup Wizard"**, click **"Finish"**
-9. Close the installer window
+1. Type your email address in the box
+2. Click the green **Continue** button
 
-#### 4d. Verify Git was installed
+### Step 4: Create a password
 
-1. **Close PowerShell completely** — Click the X button
-2. Open PowerShell again (click Windows Start, type PowerShell, click it)
-3. Type this command and press Enter:
-```powershell
-git --version
-```
+1. Create a password (at least 15 characters, mix of letters, numbers, and symbols)
+2. Type it in the box
+3. Click **Continue**
 
-**What should you see?**
-- ✅ If you see: `git version 2.40.0` (or any version number) — Git is installed! Move to Step 5.
-- ❌ If you see: `'git' is not recognized as the name of a cmdlet` — Git didn't install correctly. Try restarting your computer and running this command again.
+### Step 5: Choose your username
 
----
+1. Enter a username (this is what people will see, example: `JohnSmith42`)
+2. GitHub will tell you if it's available
+3. Click **Continue**
 
-### Step 5: Clone the repository (download the project)
+### Step 6: Email verification
 
-**What does "clone" mean?** It means downloading a copy of the project from GitHub to your computer.
+1. GitHub will send you a verification code to your email
+2. Check your email inbox
+3. Copy the code GitHub sent you
+4. Paste it into the box on the GitHub page
+5. Click **Continue**
 
-Make sure PowerShell is still showing you're in the Demo folder. Type this command and press Enter:
-```powershell
-git clone https://github.com/Zrokool/Calc-Demo.git
-```
+### Step 7: Answer a question
 
-**What will happen?** You'll see text scrolling in PowerShell. Wait for it to finish.
+1. GitHub asks "How many team members will be using GitHub?"
+2. Select: **Just me**
+3. Click **Continue**
 
-Now move into the Calc-Demo folder:
-```powershell
-cd Calc-Demo
-```
+### Step 8: Finish setup
+
+1. Click **Create account**
+2. You're done! You now have a GitHub account.
 
 ---
 
-### Step 6: Create your first file
+**Keep your username and password safe. You'll need them later!**
 
-**What is VSCode?** It's a program for editing text files. It will open when you run this command.
+---
 
-Type this and press Enter:
-```powershell
-code vision.md
+## SECOND: Install VSCode
+
+VSCode is the program you'll use to create files and commit your code. It's free and easy to install.
+
+### Windows
+
+1. Open your browser
+2. In the address bar, type: `code.visualstudio.com`
+3. Press Enter
+4. Click the blue **Download for Windows** button
+5. Wait for the download to finish
+6. Open your Downloads folder
+7. Double-click `VSCodeUserSetup-x64-x.xx.x.exe`
+8. Click **I accept the agreement**
+9. Click **Next**
+10. Keep clicking **Next** until you see **Install**
+11. Click **Install**
+12. Click **Finish**
+13. VSCode will open automatically
+
+### macOS
+
+1. Open your browser
+2. In the address bar, type: `code.visualstudio.com`
+3. Press Enter
+4. Click the **Download for Mac** button
+5. Wait for the download to finish
+6. Open Finder and go to Downloads
+7. Double-click `VSCode-darwin-universal.zip`
+8. Drag the **Visual Studio Code** app to your Applications folder
+9. Open Applications folder
+10. Double-click **Visual Studio Code**
+11. VSCode will open
+
+---
+
+---
+
+## Install Git
+
+Git needs to be installed on your computer before you start. It runs in the background.
+
+### Windows
+
+1. Open your browser and go to: `git-scm.com/download/win`
+2. The download starts automatically
+3. Open your Downloads folder and double-click the `Git-2.x.x-64-bit.exe` file
+4. Click **Next** on every screen
+5. When you see "Adjusting your PATH environment", make sure `Git from the command line and also from 3rd-party software` is selected
+6. Keep clicking **Next** until you see **Install**, then click it
+7. Click **Finish**
+8. Restart your computer
+
+### macOS
+
+1. Open your browser and go to: `git-scm.com/download/mac`
+2. The download starts automatically
+3. Open Finder, go to Downloads
+4. Double-click the `.dmg` file
+5. Double-click the Git installer icon
+6. Enter your Mac password
+7. Click **Install Software**
+8. Wait for it to finish and click **Close**
+9. Restart your computer
+
+---
+
+## OPTIONAL: Install GitHub Extension for VSCode
+
+This extension makes it easier to manage your repositories directly in VSCode. It's helpful but not required.
+
+### Windows & macOS
+
+1. Open **VSCode**
+2. Click the **Extensions** icon on the left sidebar (looks like four small squares)
+3. In the search box, type: `GitHub`
+4. Find **"GitHub"** by GitHub (the official one)
+5. Click **Install**
+
+You now have GitHub integration in VSCode! This lets you manage your repositories more easily from within VSCode.
+
+---
+
+---
+
+# Create Your First Repository
+
+---
+
+## Step 1: Create a folder on your computer
+
+### Windows
+
+1. Click **File Explorer** (or press `Win + E`)
+2. Click **Documents** in the left sidebar
+3. Right-click in the empty space
+4. Click **New** → **Folder**
+5. Name it: `MyFirstProject`
+
+### macOS
+
+1. Open **Finder**
+2. Click **Documents** in the left sidebar
+3. Right-click in the empty space
+4. Click **New Folder**
+5. Name it: `MyFirstProject`
+
+---
+
+## Step 2: Open the folder in VSCode
+
+### Windows & macOS
+
+1. Open **VSCode**
+2. Click **File** → **Open Folder**
+3. Find and select your `MyFirstProject` folder
+4. Click **Open**
+5. Click **Yes, I trust the authors** (if it asks)
+
+---
+
+## Step 3: Create your first file
+
+1. In VSCode, look at the left sidebar
+2. Hover over the folder name and click the **New File** icon (looks like a sheet of paper with a +)
+3. Name it: `README.md`
+4. Press Enter
+
+A new file opens. Type this:
+
 ```
+# My First Project
 
-**What will happen?**
-1. VSCode will open (it might take a few seconds)
-2. You'll see an empty file ready for you to type in
+Hello! This is my first GitHub repository.
 
-**Write something in the file:**
-
-Copy and paste this text (or write your own):
-```
-# My Vision
-
-I am learning to use Git and GitHub.
-
-## My goals:
-- Understand version control
-- Complete this project
-- Learn to collaborate
+## What I'm learning:
+- How to use Git
+- How to commit changes
+- How to push to GitHub
 ```
 
 **Save the file:**
-1. Press **Ctrl + S** (hold Ctrl, press S)
-2. You'll see the filename at the top stop having a dot next to it — that means it's saved
-
-**Close VSCode:**
-1. Click the **X button** in the top right corner of VSCode
-2. You're back in PowerShell
+- Press **Ctrl + S** (Windows) or **Cmd + S** (macOS)
 
 ---
 
-### Step 7: Save your work to GitHub
+## Step 4: Commit your changes in VSCode
 
-#### 7a. Set up your Git identity (first time only)
+Now you'll save your work using Git.
 
-This tells Git who you are. Type these commands:
+### Option A: Use VSCode UI (Easiest)
 
-```powershell
-git config --global user.name "Your Full Name"
-```
+#### 4a. Open the Source Control panel
 
-Replace `Your Full Name` with your actual name (example: `John Smith`)
+1. On the left sidebar, click the **Source Control** icon (looks like three dots connected)
+2. You'll see a section that says "Source Control"
 
-Press Enter, then type:
+#### 4b. Initialize Git
 
-```powershell
-git config --global user.email "your.email@gmail.com"
-```
+1. Click the blue button that says **Initialize Repository**
+2. Select your `MyFirstProject` folder (it should already be selected)
+3. Click **Initialize Repository**
 
-Replace `your.email@gmail.com` with your actual email address.
+You'll now see your file listed under "Changes".
 
-Press Enter.
+#### 4c. Stage your file
 
-#### 7b. Create a GitHub personal access token (first time only)
+1. You should see `README.md` listed under "Changes"
+2. Click the **+** button next to `README.md`
+3. It will move to a section called "Staged Changes"
 
-**What is a token?** It's a special password that lets Git access your GitHub account.
+#### 4d. Commit
 
-1. Open your browser
-2. Go to: `https://github.com/settings/tokens`
-3. Sign in if needed
-4. Click the blue button **"Generate new token"**
-5. Click **"Generate new token (classic)"**
-6. In the box labeled "Note", type: `Calc-Demo`
-7. Scroll down and look for a box labeled **"repo"** — check it (click the checkbox)
-8. Scroll down and click the green button **"Generate token"**
-9. **A long code will appear** — this is your token
-10. **Copy it** (Ctrl + C) and paste it into a text file so you don't lose it
-11. ⚠️ **Important:** You'll only see this token once. If you leave this page without copying it, you have to generate a new one.
-
-#### 7c. Upload your file to GitHub
-
-Go back to PowerShell and type these commands one at a time, pressing Enter after each:
-
-```powershell
-git add vision.md
-```
-
-```powershell
-git commit -m "Add my vision file"
-```
-
-```powershell
-git push
-```
-
-**What will happen next?**
-
-PowerShell will ask for your username and password:
-
-```
-Username for 'https://github.com': 
-```
-
-1. Type your **GitHub username** (the name you use to log in)
-2. Press Enter
-3. It will then ask:
-
-```
-Password for 'https://username@github.com':
-```
-
-4. Paste your **personal access token** (that long code you saved earlier)
-5. Press Enter
-6. The password won't show as you type — this is normal
-
-**Wait for success message:**
-
-You should see:
-```
-Enumerating objects: 3, done.
-To https://github.com/Zrokool/Calc-Demo.git
-   abc1234..def5678  main -> main
-```
-
-**🎉 Success!** Your file is now on GitHub!
+1. In the message box at the top (where it says "Message"), type: `Add README file`
+2. Click the blue **Commit** button
+3. Done! Your file is now committed locally.
 
 ---
 
-## macOS Instructions
+### Option B: Use Terminal Commands
 
-### What you'll need:
-- A Mac laptop
-- An internet connection
-- A GitHub account (free at github.com)
+If you prefer using the terminal, here are the Git commands that do the same thing:
 
----
+#### 4a. Open Terminal in VSCode
 
-### Step 1: Open Terminal (Mac's command tool)
+Press **Ctrl + `** (Windows) or **Cmd + `** (macOS) to open the terminal at the bottom of VSCode.
 
-**What is Terminal?** It's a program where you type commands to tell your Mac what to do.
-
-1. Press **Cmd + Space** (Command key and Space bar at the same time)
-2. A search box will appear at the top of your screen
-3. Type: `Terminal`
-4. You'll see "Terminal" appear in the results
-5. Press Enter or click on it
-6. A white window will open with text — this is Terminal
-
----
-
-### Step 2: Navigate to your Documents folder
-
-In Terminal, type this command and press Enter:
-```bash
-cd ~/Documents
-```
-
-**What does this do?** It moves you to your Documents folder.
-
----
-
-### Step 3: Create a new folder called Demo
+#### 4b. Initialize Git
 
 Type this command and press Enter:
-```bash
-mkdir Demo
+```
+git init
 ```
 
-**What does this do?** It creates a new folder named "Demo" in your Documents folder.
+This tells Git to start tracking changes in your folder.
 
-Now type this command and press Enter:
-```bash
-cd Demo
+#### 4c. Stage your file
+
+Type this command and press Enter:
+```
+git add .
 ```
 
-**What does this do?** It moves you INTO the Demo folder.
+**What does this do?** The `.` means "add all files". This prepares your files to be committed.
 
----
+#### 4d. Commit your changes
 
-### Step 4: Download and Install Git
-
-**What is Git?** It's software that helps you save and manage your code changes.
-
-#### 4a. Download Git
-
-1. Open your web browser (Safari, Chrome, or Firefox)
-2. In the address bar at the top, type: `git-scm.com/download/mac`
-3. Press Enter
-4. A download will start automatically
-5. Wait for it to finish
-
-#### 4b. Find and run the Git installer
-
-1. Open **Finder** (the blue smiley face icon in your dock at the bottom)
-2. Click **"Downloads"** in the left sidebar
-3. Look for a file that looks like: `git-2.x.x-intel-universal2.dmg` (the numbers might be different)
-4. **Double-click** it (press the left mouse button twice quickly)
-5. A new window will open showing the Git installer
-
-#### 4c. Install Git
-
-1. In the new window, you'll see a Git icon
-2. **Double-click** the Git icon (it usually says "Git Installer" or has a package symbol)
-3. A popup will appear asking for your **Mac password** — type it
-4. Click **"Install Software"**
-5. Wait for installation to finish (about 1-2 minutes)
-6. You'll see a message: **"The install was successful"**
-7. Click **"Close"**
-8. Close all the installer windows
-
-#### 4d. Verify Git was installed
-
-1. **Close Terminal completely** — Click the red button in the top left corner
-2. Open Terminal again (Cmd + Space, type Terminal, press Enter)
-3. Type this command and press Enter:
-```bash
-git --version
+Type this command and press Enter:
+```
+git commit -m "Add README file"
 ```
 
-**What should you see?**
-- ✅ If you see: `git version 2.40.0` (or any version number) — Git is installed! Move to Step 5.
-- ❌ If you see: `command not found: git` — Git didn't install correctly. Try restarting your Mac and running this command again.
+**What does this do?** This creates a snapshot of your work. The `-m` means "message", and `"Add README file"` is the description of what you changed.
 
----
-
-### Step 5: Clone the repository (download the project)
-
-**What does "clone" mean?** It means downloading a copy of the project from GitHub to your computer.
-
-Make sure Terminal is still showing you're in the Demo folder. Type this command and press Enter:
-```bash
-git clone https://github.com/Zrokool/Calc-Demo.git
+**You should see:**
 ```
-
-**What will happen?** You'll see text scrolling in Terminal. Wait for it to finish.
-
-Now move into the Calc-Demo folder:
-```bash
-cd Calc-Demo
+[main (root-commit) abc1234] Add README file
+ 1 file changed, 5 insertions(+)
+ create mode 100644 README.md
 ```
 
 ---
 
-### Step 6: Create your first file
-
-**What is VSCode?** It's a program for editing text files. It will open when you run this command.
-
-Type this and press Enter:
-```bash
-code vision.md
-```
-
-**What will happen?**
-1. VSCode will open (it might take a few seconds)
-2. You'll see an empty file ready for you to type in
-
-**Write something in the file:**
-
-Copy and paste this text (or write your own):
-```
-# My Vision
-
-I am learning to use Git and GitHub.
-
-## My goals:
-- Understand version control
-- Complete this project
-- Learn to collaborate
-```
-
-**Save the file:**
-1. Press **Cmd + S** (Command key and S at the same time)
-2. You'll see the filename at the top stop having a dot next to it — that means it's saved
-
-**Close VSCode:**
-1. Click the red button in the top left corner of VSCode
-2. You're back in Terminal
+**Use whichever option feels more comfortable to you. Both do the same thing.**
 
 ---
 
-### Step 7: Save your work to GitHub
+## Step 5: Create a repository on GitHub.com
 
-#### 7a. Set up your Git identity (first time only)
+1. Open your browser
+2. Go to: `https://github.com/new`
+3. In the **Repository name** box, type: `MyFirstProject`
+4. Leave everything else as default
+5. Scroll down and click **Create repository**
+6. **Copy the URL** from the line that says `https://github.com/YourUsername/MyFirstProject.git`
+7. Keep this page open
 
-This tells Git who you are. Type these commands:
+---
 
-```bash
-git config --global user.name "Your Full Name"
+## Step 6: Connect your folder to GitHub in VSCode
+
+### 6a. Add the remote connection
+
+1. Go back to VSCode
+2. Press **Ctrl + `** (Windows) or **Cmd + `** (macOS) to open the terminal at the bottom
+3. Copy and paste this command (replace `YourUsername` with your actual GitHub username):
+
+```
+git remote add origin https://github.com/YourUsername/MyFirstProject.git
 ```
 
-Replace `Your Full Name` with your actual name (example: `Jane Smith`)
+**What does this do?** This connects your local folder to your GitHub repository.
 
-Press Enter, then type:
+4. Press Enter
 
-```bash
-git config --global user.email "your.email@gmail.com"
-```
-
-Replace `your.email@gmail.com` with your actual email address.
-
-Press Enter.
-
-#### 7b. Create a GitHub personal access token (first time only)
-
-**What is a token?** It's a special password that lets Git access your GitHub account.
+### 6b. Create a GitHub personal access token
 
 1. Open your browser
 2. Go to: `https://github.com/settings/tokens`
-3. Sign in if needed
-4. Click the blue button **"Generate new token"**
-5. Click **"Generate new token (classic)"**
-6. In the box labeled "Note", type: `Calc-Demo`
-7. Scroll down and look for a box labeled **"repo"** — check it (click the checkbox)
-8. Scroll down and click the green button **"Generate token"**
-9. **A long code will appear** — this is your token
-10. **Copy it** (Cmd + C) and paste it into a text file so you don't lose it
-11. ⚠️ **Important:** You'll only see this token once. If you leave this page without copying it, you have to generate a new one.
-
-#### 7c. Upload your file to GitHub
-
-Go back to Terminal and type these commands one at a time, pressing Enter after each:
-
-```bash
-git add vision.md
-```
-
-```bash
-git commit -m "Add my vision file"
-```
-
-```bash
-git push
-```
-
-**What will happen next?**
-
-Terminal will ask for your username and password:
-
-```
-Username for 'https://github.com': 
-```
-
-1. Type your **GitHub username** (the name you use to log in)
-2. Press Enter
-3. It will then ask:
-
-```
-Password for 'https://username@github.com':
-```
-
-4. Paste your **personal access token** (that long code you saved earlier)
-5. Press Enter
-6. The password won't show as you type — this is normal
-
-**Wait for success message:**
-
-You should see:
-```
-Enumerating objects: 3, done.
-To https://github.com/Zrokool/Calc-Demo.git
-   abc1234..def5678  main -> main
-```
-
-**🎉 Success!** Your file is now on GitHub!
+3. Click **Generate new token** → **Generate new token (classic)**
+4. In "Note", type: `MyFirstProject`
+5. Check the **repo** box
+6. Click **Generate token**
+7. **Copy the token** (it's a long code)
+8. Save it in a text file somewhere safe
 
 ---
 
-## Quick Reference: Upload changes later
+## Step 7: Push to GitHub
 
-After your first time, here's the quick way to upload changes:
+Now you upload your committed code to GitHub.
+
+### Option A: Use VSCode UI (Easiest)
+
+#### 7a. Set your Git identity (first time only)
+
+1. Press **Ctrl + `** (Windows) or **Cmd + `** (macOS) to open the terminal
+2. Type:
+```
+git config --global user.name "Your Name"
+```
+3. Press Enter, then type:
+```
+git config --global user.email "your.email@gmail.com"
+```
+4. Press Enter
+
+#### 7b. Push your code
+
+1. In VSCode, go to **Source Control** (left sidebar)
+2. Click the three dots **...** menu
+3. Click **Push**
+4. VSCode might ask for your credentials:
+   - **Username:** Your GitHub username
+   - **Password:** Paste your personal access token
+
+Done! Your repository is now on GitHub! 🎉
+
+---
+
+### Option B: Use Terminal Commands
+
+#### 7a. Set your Git identity (first time only)
+
+Type these commands in the terminal (press Enter after each):
 
 ```
-git add filename.txt
-git commit -m "What you changed"
+git config --global user.name "Your Name"
+```
+
+```
+git config --global user.email "your.email@gmail.com"
+```
+
+#### 7b. Push to GitHub
+
+Type this command and press Enter:
+
+```
+git push -u origin main
+```
+
+**What does this do?** This uploads your commits to GitHub. When it asks for credentials:
+- **Username:** Your GitHub username
+- **Password:** Paste your personal access token
+
+---
+
+**Use whichever option feels more comfortable to you. Both do the same thing.**
+
+---
+
+## Make changes later
+
+To upload new changes, you have two options:
+
+### Option A: Use VSCode UI
+
+1. Edit or create a file in VSCode
+2. Press **Ctrl + S** or **Cmd + S** to save
+3. Go to **Source Control**
+4. Click **+** next to your file
+5. Type a message describing what you changed
+6. Click **Commit**
+7. Click the **...** menu and click **Push**
+
+### Option B: Use Terminal Commands
+
+1. Edit or create a file in VSCode
+2. Press **Ctrl + S** or **Cmd + S** to save
+3. Press **Ctrl + `** (Windows) or **Cmd + `** (macOS) to open the terminal
+4. Type and press Enter:
+```
+git add .
+```
+5. Type and press Enter:
+```
+git commit -m "Description of what you changed"
+```
+6. Type and press Enter:
+```
 git push
 ```
 
-That's it!
+**What do these commands do?**
+- `git add .` = Stage all your changes
+- `git commit -m "..."` = Create a snapshot with a description
+- `git push` = Upload to GitHub
+
+---
+
+**Use whichever option feels more comfortable to you. Both do the same thing!**
 
 ---
 
 ## Troubleshooting
 
-**"Git is not recognized" (Windows)**
-- Close PowerShell
-- Restart your computer
-- Open PowerShell again
-- Try `git --version`
+**"Initialize Repository" button doesn't appear**
+- Make sure you opened VSCode with a folder (not just a file)
+- Go to **File** → **Open Folder** and select your `MyFirstProject` folder
 
-**"command not found: git" (Mac)**
-- Close Terminal
-- Restart your Mac
-- Open Terminal again
-- Try `git --version`
+**"Push" doesn't work**
+- Make sure you completed Step 6a (adding the remote)
+- Check your personal access token is correct
 
-**"Authentication failed" when pushing**
-- Make sure your token is correct
-- Check you copied the entire token (it's long)
-- Generate a new token at: https://github.com/settings/tokens
+**Can't find a button**
+- Look for icons on the left sidebar
+- Source Control icon looks like three dots with lines
 
-**"fatal: 'origin' does not appear to be a git repository"**
-- Make sure you're in the Calc-Demo folder
-- Check by typing `pwd` and pressing Enter
-- You should see a path ending in `/Calc-Demo`
+**"Authentication failed"**
+- Generate a new personal access token at: https://github.com/settings/tokens
+- Make sure you copied the entire token
