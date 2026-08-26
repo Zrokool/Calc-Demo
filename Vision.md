@@ -25,41 +25,32 @@ Ten minutes here saves an hour of *"no, not like that."*
 5. Then: **"Looks right — build it."**
 6. Something wrong? **Fix `vision.md` first**, then say *"I updated vision.md, re-read it."*
 
-| Marker | Meaning |
-|---|---|
-| 🔲 | You fill this in |
-| 📐 | Example answer (calculator app) — delete it |
-| ⏭️ | Skip if it doesn't apply to you |
-
 ---
 
 # 1. What I'm Building & Who It's For
 
-🔲 **One sentence:**
+**One sentence:**
 
-> 📐 A calculator that runs in my browser and does basic math with buttons or the keyboard.
+> A calculator that runs in my browser and does basic math with buttons or the keyboard.
 
-🔲 **Project name** (this becomes the folder and repo name):
+**Project name:**
 
-> 📐 `simple-calculator`
+> `calculator`
 
-🔲 **Why I'm building it:**
+**Why I'm building it:**
 
-> 📐 I want one finished project I actually understand, that I can put on GitHub.
+> I want one finished project I actually understand, that I can put on GitHub.
 
-🔲 **Who, and where:**
+**Who, and where:**
 
-> 📐 Anyone who needs a quick calculation, on a laptop or phone browser. No signup, no instructions needed.
+> Anyone who needs a quick calculation, on a laptop or phone browser. No signup, no instructions needed.
 
 ---
 
 # 2. Must-Haves
 
-Keep this list short. Everything here is code that can break.
+**What it has to do:**
 
-🔲 **What it has to do:**
-
-> 📐
 > 1. Add, subtract, multiply, divide
 > 2. Click buttons to enter numbers
 > 3. Type on the keyboard to enter numbers
@@ -72,11 +63,8 @@ Keep this list short. Everything here is code that can break.
 
 # 3. Not Building (Yet)
 
-**Don't skip this one.** AI fills silence with assumptions. If you don't say "no login," you might get one.
+**Not in this version:**
 
-🔲 **Not in this version:**
-
-> 📐
 > - No login or user accounts
 > - No saving anything — close the tab, it's gone
 > - No scientific functions (sin, cos, log)
@@ -88,11 +76,8 @@ Keep this list short. Everything here is code that can break.
 
 # 4. How It Behaves
 
-Write these as "when I ___, then ___." This is what AI turns into code.
+**Behaviors:**
 
-🔲 **Behaviors:**
-
-> 📐
 > - When I click `7`, then `7` shows in the display.
 > - When I click `7 + 3 =`, then it shows `10`.
 > - When I press `Enter`, then it acts like `=`.
@@ -104,11 +89,8 @@ Write these as "when I ___, then ___." This is what AI turns into code.
 
 # 5. What It Looks Like
 
-A rough sketch beats a paragraph. Text boxes are fine.
+**Sketch:**
 
-🔲 **Sketch:**
-
-> 📐
 > ```
 > ┌─────────────────────┐
 > │               1,234 │  ← the display
@@ -125,65 +107,57 @@ A rough sketch beats a paragraph. Text boxes are fine.
 > └───────────┴─────┴───┘
 > ```
 
-🔲 **Colors and font:**
+**Colors and font:**
 
-> 📐 Dark purple background, white text, purple `=` button. Clean sans-serif; monospace for the display so numbers don't jump around.
+> Dark purple background, white text, purple `=` button. Clean sans-serif; monospace for the display so numbers don't jump around.
 
-🔲 **How many screens:**
+**How many screens:**
 
-> 📐 One. No menus, no other pages.
+> One. No menus, no other pages.
 
 ---
 
 # 6. Front-End Only, or Front-End + Back-End?
 
-This is the biggest decision in the file. It decides how much gets built and how hard it is to run.
-
 **Front-end** = what the user sees and clicks (HTML, CSS, JavaScript in the browser).
-**Back-end** = a program running behind the scenes that stores data or keeps secrets.
 
-🔲 **Pick one:**
+**Selection:**
 
 - [Yes] **Front-end only** → fill in Section 7
 
-> Back-end builds aren't covered in this template — that's a later session.
-
-> 📐 Front-end only. Nothing needs saving.
+> Front-end only. Nothing needs saving.
 
 **How to tell:**
 
 | If your app has to... | You need |
 |---|---|
-| Remember something after the browser closes | a back-end |
-| Let two different people see the same data | a back-end |
-| Hide a password or API key | a back-end |
 | Just calculate, display, or convert | **front-end only** |
 
-> **Start front-end only if you can.** It's a real, complete app, and it's far easier to get running. You can add a back-end later.
+> **Start front-end only if you can.** It's not a real complete app, rather its a demo, and i's far easier to get running. You can add a back-end later after the innovation hub presentation.
 
 ---
 
 # 7. Front-End Basics
 
-🔲 **Built with:**
+**Built with:**
 
-> 📐 Plain HTML, CSS, and JavaScript. No frameworks, no libraries, nothing to install.
+> Plain HTML, CSS, and JavaScript. No frameworks, no libraries, nothing to install.
 
-🔲 **What it has to remember while running:**
+**What it has to remember while running:**
 
-> 📐 The number I'm typing, the previous number, which operator I picked, and whether the display is showing an answer.
+> The number I'm typing, the previous number, which operator I picked, and whether the display is showing an answer.
 
-🔲 **Input methods:**
+**Input methods:**
 
-> 📐 Clicking/tapping the buttons, plus keyboard: digits, `+ - * /`, `Enter`, `Escape`, `Backspace`.
+> Clicking/tapping the buttons, plus keyboard: digits, `+ - * /`, `Enter`, `Escape`, `Backspace`.
 
-🔲 **Works on:**
+**Works on:**
 
-> 📐 Chrome, Safari, Firefox, Edge. Must not break on a phone screen.
+> Chrome, Safari, Firefox, Edge. Must not break on a phone screen.
 
-🔲 **Accessibility:**
+**Accessibility:**
 
-> 📐 Every button reachable with the Tab key, with a visible outline. Buttons big enough to tap with a thumb.
+> Every button reachable with the Tab key, with a visible outline. Buttons big enough to tap with a thumb.
 
 ---
 
@@ -191,24 +165,23 @@ This is the biggest decision in the file. It decides how much gets built and how
 
 We're keeping this **local only** — it runs on your machine, at an address only you can open. That's a finished, working app. Putting it on the public internet is a later session.
 
-🔲 **What's already installed on my machine:**
+**What's already installed on my machine:**
 
-> 📐 VS Code, GitHub Desktop, Chrome. No Python yet.
+> VS Code, GitHub Desktop, Chrome.
 
-🔲 **How I start it:**
+**How I start it:**
 
-> 📐 Double-click `index.html`, or right-click it in VS Code and choose "Open with Live Server."
+> Double-click `index.html`.
 
-**What "running it" looks like, by project type:**
+**What "running it" looks like:**
 
 | Your build | How you start it | Where you open it |
 |---|---|---|
 | Front-end only | double-click `index.html` | the file opens right in your browser |
-| Front-end only, nicer | VS Code "Live Server" extension | `http://127.0.0.1:5500` — auto-refreshes when you save |
 
-🔲 **How I know it's working:**
+**How I know it's working:**
 
-> 📐 The calculator appears in the browser, buttons respond to clicks, and there are no red errors in the console (F12 → Console).
+> The calculator appears in the browser, buttons respond to clicks, and there are no red errors in the console (F12 → Console).
 
 > **`127.0.0.1` and `localhost` mean the same thing: your own computer.** Nobody else on the internet can reach that address, which is exactly what you want while learning.
 
@@ -216,11 +189,8 @@ We're keeping this **local only** — it runs on your machine, at an address onl
 
 # 9. Rules and Edge Cases
 
-This is what separates a demo from something that works. Ask AI *"what edge cases am I missing?"* and add its answers here.
+**What happens when...**
 
-🔲 **What happens when...**
-
-> 📐
 > - **Divide by zero** → show `Cannot divide by zero`. Never show `Infinity` or `NaN`.
 > - **Answer is really long** (`1 ÷ 3`) → round it so it fits the display.
 > - **Extra zeros** → typing `0 0 5` shows `5`, not `005`.
@@ -232,11 +202,8 @@ This is what separates a demo from something that works. Ask AI *"what edge case
 
 # 10. My Checklist — How I Know It's Done
 
-Click through these by hand. You can also hand this list back to AI and ask it to check each one.
+**Test each:**
 
-🔲 **Test each:**
-
-> 📐
 > - [ ] `7 + 3 =` shows `10`
 > - [ ] `9 − 12 =` shows `-3`
 > - [ ] `10 ÷ 4 =` shows `2.5`
@@ -254,11 +221,8 @@ Click through these by hand. You can also hand this list back to AI and ask it t
 
 # 11. My Git Habits for This Build
 
-From the *Vibe Coding* slide: **a branch per attempt.** If an idea fails, you delete a branch instead of repairing your project.
+**My workflow:**
 
-🔲 **My workflow:**
-
-> 📐
 > 1. `main` always works. Broken code never sits on `main`.
 > 2. Each new idea gets its own branch: `feature/layout`, `feature/operators`, `feature/edge-cases`.
 > 3. I read the diff before every commit. If I don't understand a change, I ask AI to explain it before committing.
@@ -270,15 +234,6 @@ From the *Vibe Coding* slide: **a branch per attempt.** If an idea fails, you de
 ---
 
 # 12. Prompts to Run, In Order
-
-**Ask for one step at a time.** "Build the whole thing" gives you code you didn't watch get written — and can't fix.
-
-**On GitHub Copilot Free:** chat is capped at 50 messages/month (code completions
-get 2,000/month — effectively unlimited for a project this size). The 6 prompts
-below cost 6 of your 50 per build, leaving roughly 44 for debugging. Stretch it
-further: batch several questions or edge cases into one message instead of
-one-per-message, let inline completions (not chat) handle small one-line edits,
-and stay in one chat thread per project instead of starting new ones.
 
 **1. Plan**
 ```
@@ -311,8 +266,7 @@ how you're keeping track of what I typed.
 Give me the exact steps to run this on my computer right now, starting
 from "I just opened this folder in VS Code," based on what's listed in
 Section 8 of vision.md. Number every step and tell me what I should see
-on screen after each one. Also list everything that needs to be installed,
-with a command to check if I already have it.
+on screen after each one.
 ```
 
 **5. Verify**
@@ -338,9 +292,10 @@ it, and what I learned building it.
 
 # 13. Notes
 
-🔲 **What changed and why:**
+**What changed and why:**
 
-> 📐 `2026-08-08` — Wrote this at the Innovator Hub session, before any code.
+> - `2026-08-08` — Wrote this at the Innovator Hub session, before any code.
+> - `2026-08-25` — Confirmed the calculator spec as-written (Sections 1–10). Removed the VS Code Live Server option from Section 8 — this build is opened only by double-clicking `index.html`, nothing else. Scaffold (HTML/CSS) built; JavaScript behavior next.
 
 ---
 
@@ -360,10 +315,6 @@ it, and what I learned building it.
 > `index.html`, `README.md`, and config files (`.gitignore`,
 > `package.json`) at the project root.
 
-## Using this for your next project
-
-Only the examples are calculator-specific — the same sections work for a to-do list, budget tracker, or personal site. Swap the examples, keep the structure. The sections that matter most: **3** (Not Building), **6** (Front-end or back-end), **10** (Checklist).
-
 ---
 
-*Hikma Foundation · Innovator Hub · Modern Development (AI-Assisted) · [www.HikmaCLT.com](https://www.HikmaCLT.com)*
+*Hikma Foundation · Innovator Hub · Modern Development (AI-Assisted) · [www.HikmaCLT.org](https://www.HikmaCLT.org)*
